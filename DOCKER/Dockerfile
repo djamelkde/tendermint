@@ -8,7 +8,7 @@ WORKDIR /tendermint
 RUN make build-linux
 
 # stage 2
-FROM golang:1.15-alpine
+FROM golang:1.25.4-alpine
 LABEL maintainer="hello@tendermint.com"
 
 # Tendermint will be looking for the genesis file in /tendermint/config/genesis.json
